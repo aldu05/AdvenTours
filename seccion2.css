@@ -1,0 +1,346 @@
+body{
+    margin: 0;
+    background-image: url("fondo.png");
+    background-position: center center;
+    background-repeat: no repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  
+  #menu{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: end;
+  }
+  
+  #menu div:first-child{
+    background-color: rgba(0, 0, 0, .3);
+    color: white;
+    display: flex;
+    flex: auto;
+    font-size: 4em;
+    font-family: Lalezar; /*CAMBIAR */
+    align-items: center;
+  }
+  
+  #menu i{
+    margin-left: 0.2em;
+    font-size: 0.9em;
+    margin-bottom: 0.2em;
+  }
+  
+  .seccion{
+      width: 18%;
+      text-align: center;
+      line-height: 6.25em;
+      font-size: 1.5em;
+      font-family: Sarala; /*CAMBIAR */
+      background-color: rgba(0, 0, 0, .3);
+    }
+  
+  #menu a{
+    color: white;
+    text-decoration: none;
+  }
+  
+  #menu a:hover{
+    color: rgba(0, 0, 0, 1);
+  }
+
+  #titulo a:hover{
+    color: white;
+  }
+  
+  #contenedor{
+      position: relative;
+      width: 100%;
+      margin-bottom: 45em;
+  }
+
+  #descripcion{
+      position: absolute;
+      background-color: white;
+      z-index: 2;
+      width: 40%;
+      height: 30em;
+      margin-left: 12em;
+      margin-top: 5em;
+      text-align: center;
+  }
+
+  #video{
+      position: absolute;
+      width: 100%;
+      height: 26em;
+      background-color: black;
+      z-index: 1;
+      margin-left: 90%;
+      top: 25%;
+  }
+
+  #descripcion h1{
+    font-family: 'Roboto';
+    margin-top: 1em;
+  }
+
+  #descripcion p{
+      text-align: left;
+      margin-right: 4em;
+      margin-left: 2.6em;
+      font-size: 1.4em;
+      font-family: 'Roboto';
+  }
+
+  footer{
+    color: white;
+    background-color: rgba(0, 0, 0, .3);
+    padding: 0.3em 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    position: static;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: end;
+    }
+  
+    .iconos {
+      width: 25%;
+      font-size: 3em;
+      margin-top: 1em;
+    }
+
+    footer p{
+      font-size: 0.5em;
+      font-family: 'Roboto'
+    }
+  
+    footer i:hover{
+      color: rgba(69, 68, 68, 0.667);
+    }
+
+
+    @media screen and (min-width: 600px) and (max-width: 1024px) and (min-height: 800px) and (max-height: 1366px){
+      #menu div:first-child{
+        font-size: 1.8em;
+      }
+      
+      #menu i{
+        margin-left: 0.2em;
+        font-size: 0.8em;
+        margin-bottom: 0.2em;
+      }
+      
+      .seccion{
+          width: 22%;
+          line-height: 6.25em;
+          font-size: 0.8em;
+        }
+
+        #video{
+          top: 20%;
+        }
+
+      #descripcion{
+          width: 50%;
+          margin-left: 3%;
+      }
+    
+      #descripcion h1{
+        font-size: 1.2em;
+      }
+    
+      #descripcion p{
+          margin-left: 1.8em;
+          font-size: 1.05em;
+      }
+    
+      footer{
+        position: absolute;
+        }
+      
+        .iconos {
+          font-size: 1.5em;
+        }
+    
+        footer p{
+          font-size: 0.6em;
+        }
+      
+      }
+
+
+      @media screen and (min-width: 365px) and (max-width: 510px) and (min-height: 730px) and (max-height: 930px){
+        #menu div:first-child{
+          font-size: 1em;
+        }
+        
+        #menu i{
+          margin-left: 0.2em;
+          font-size: 0.8em;
+          margin-bottom: 0.2em;
+        }
+        
+        .seccion{
+            width: 22%;
+            line-height: 6.25em;
+            font-size: 0.5em;
+          }
+
+          #contenedor{
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+          #video{
+            z-index: 0;
+            height: 15em;
+            margin-left: 30%;
+            margin-top: 4%;
+            position: relative;
+          }
+  
+        #descripcion{
+          z-index: 0;
+            width: 70%;
+            height: 15em;
+            margin-left: 3%;
+            position: relative;
+            margin-top: 3em;
+        }
+      
+        #descripcion h1{
+          font-size: 0.8em;
+        }
+      
+        #descripcion p{
+            margin-left: 1.8em;
+            font-size: 0.7em;
+        }
+      
+        footer{
+          position: absolute;
+          }
+        
+          .iconos {
+            font-size: 1.1em;
+          }
+      
+          footer p{
+            font-size: 0.6em;
+          }
+        
+        }
+
+      
+        @media screen and (min-width: 320px) and (max-width: 509px) and (min-height: 630px) and (max-height: 750px){
+          #menu div:first-child{
+            font-size: 1em;
+          }
+          
+          #menu i{
+            margin-left: 0.2em;
+            font-size: 0.8em;
+            margin-bottom: 0.2em;
+          }
+          
+          .seccion{
+              width: 22%;
+              line-height: 6.25em;
+              font-size: 0.55em;
+            }
+
+            #contenedor{
+              position: absolute;
+              display: flex;
+              flex-direction: column;
+              flex-wrap: wrap;
+          }
+            #video{
+              z-index: 0;
+              height: 15em;
+              margin-left: 30%;
+              margin-top: 4%;
+              position: relative;
+            }
+    
+          #descripcion{
+            z-index: 0;
+              width: 70%;
+              height: 14em;
+              margin-left: 3%;
+              position: relative;
+              margin-top: 1em;
+              margin-bottom: 0.8em;
+          }
+        
+          #descripcion h1{
+            font-size: 0.7em;
+          }
+        
+          #descripcion p{
+              margin-left: 1.8em;
+              font-size: 0.6em;
+          }
+        
+          footer{
+            position: absolute;
+            }
+          
+            .iconos {
+              font-size: 1em;
+            }
+        
+            footer p{
+              font-size: 0.5em;
+            }
+          }
+            @media screen and (min-width: 365px) and (max-width: 510px) and (min-height: 730px) and (max-height: 930px){
+              #menu div:first-child{
+                font-size: 1em;
+              }
+              
+              #menu i{
+                margin-left: 0.2em;
+                font-size: 0.8em;
+                margin-bottom: 0.2em;
+              }
+              
+              .seccion{
+                  width: 22%;
+                  line-height: 6.25em;
+                  font-size: 0.5em;
+                }
+          
+                #oferta{
+                  width: 10em;
+                  height: 10em;
+                  line-height: 2.5em;
+                }
+          
+                #oferta li{
+                  font-size: 1.5em;
+                }
+          
+                #shop a{
+                  margin: 0.3em;
+                  border-width: 0.02em;
+                  font-size: 1.5em;
+                  border-radius: 0.9em;
+                }
+          
+                footer{
+                font-size: 1em;
+            }
+          
+               footer i{
+              margin: 0.4em;
+            }
+          }
+
+          
+
+
+
+        
